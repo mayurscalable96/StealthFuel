@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    >
+    <!--layout="@layout/app_bar_navigation_drawer"-->
+    <include
+        layout="@layout/app_bar"
+         />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/black"
+            android:id="@+id/nav_view"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/logo"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingBottom="30dp"
+                android:paddingTop="20dp"
+                android:id="@+id/navheader"
+                >
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/layout_request_gas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="20dp"
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/img_request_gas"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/request_gas"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/request_gas"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:textSize="18dp"
+                            android:textColor="@color/white"
+                            android:layout_toRightOf="@+id/img_request_gas"
+                            android:paddingLeft="20dp"
+                            android:text="Request Gas"
+                            android:paddingTop="4dp"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/layout_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="20dp"
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/img_account"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/request_gas"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/account"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:textSize="18dp"
+                            android:textColor="@color/white"
+                            android:layout_toRightOf="@+id/img_account"
+                            android:paddingLeft="20dp"
+                            android:text="Account"
+                            android:paddingTop="4dp"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/layout_orders"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="20dp"
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/img_orders"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/orders"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/orders"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:textSize="18dp"
+                            android:textColor="@color/white"
+                            android:layout_toRightOf="@+id/img_orders"
+                            android:paddingLeft="20dp"
+                            android:text="Orders"
+                            android:paddingTop="4dp"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/layout_invite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="20dp"
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/img_invite"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/invite_friend"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/invite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:textSize="18dp"
+                            android:textColor="@color/white"
+                            android:layout_toRightOf="@+id/img_invite"
+                            android:paddingLeft="20dp"
+                            android:text="Invite Friends"
+                            android:paddingTop="4dp"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout_promotions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="20dp"
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/img_promotions"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/promotions"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/promotions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:textSize="18dp"
+                            android:textColor="@color/white"
+                            android:layout_toRightOf="@+id/img_promotions"
+                            android:paddingLeft="20dp"
+                            android:text="Promotions"
+                            android:paddingTop="4dp"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/layout_faq"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="20dp"
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/img_faq"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/faq"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/faq"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:textSize="18dp"
+                            android:textColor="@color/white"
+                            android:layout_toRightOf="@+id/img_faq"
+                            android:paddingLeft="20dp"
+                            android:text="FAQ"
+                            android:paddingTop="4dp"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/layout_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="20dp"
+                        >
+
+
+                        <ImageView
+                            android:id="@+id/img_contact"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/contact"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/contact"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:textSize="18dp"
+                            android:textColor="@color/white"
+                            android:layout_toRightOf="@+id/img_contact"
+                            android:paddingLeft="20dp"
+                            android:text="Contact Us"
+                            android:paddingTop="4dp"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/layout_about"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="40dp"
+                       >
+
+
+                        <ImageView
+                            android:id="@+id/img_about"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/about"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/about"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:textSize="18dp"
+                            android:textColor="@color/white"
+                            android:layout_toRightOf="@+id/img_about"
+                            android:paddingLeft="20dp"
+                            android:text="About Us"
+                            android:paddingTop="4dp"
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+    <!--<android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_navigation_drawer"
+        app:menu="@menu/activity_navigation_drawer_drawer"
+        android:background="@color/black"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        />-->
+
+</androidx.drawerlayout.widget.DrawerLayout>

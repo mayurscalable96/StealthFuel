@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Login"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <include layout="@layout/app_bar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+<!--            <EditText-->
+<!--                android:id="@+id/login_email"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:hint="@string/email"-->
+<!--                android:textCursorDrawable="@drawable/cursor"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:background="@drawable/roundededittext"-->
+<!--                android:paddingLeft="15dp"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textColor="@color/grey"-->
+<!--                android:fontFamily="@font/calibri"-->
+<!--                 />-->
+
+
+<!--                <android.support.design.widget.TextInputLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:passwordToggleEnabled="true"-->
+<!--                    app:passwordToggleTint="@color/grey"-->
+<!--                    app:hintEnabled="false">-->
+<!--                    <EditText-->
+<!--                        android:id="@+id/login_pwd"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:hint="@string/pwd"-->
+<!--                        android:textCursorDrawable="@drawable/cursor"-->
+<!--                        android:inputType="textPassword"-->
+<!--                        android:background="@drawable/roundededittext"-->
+<!--                        android:paddingLeft="15dp"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:textColor="@color/grey"-->
+<!--                        android:fontFamily="@font/calibri"-->
+<!--                        />-->
+<!--                </android.support.design.widget.TextInputLayout>-->
+
+            <EditText
+                android:id="@+id/mob"
+                android:layout_weight="1.0"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/mob"
+                android:textCursorDrawable="@drawable/cursor"
+                android:inputType="number"
+                android:background="@drawable/roundededittext"
+                android:paddingLeft="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/calibri"/>
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_design"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/calibrib"
+                />
+            <TextView
+                android:id="@+id/forgotpwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:gravity="center"
+                android:padding="4sp"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                android:fontFamily="@font/calibri"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/newaccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create a new account"
+                android:gravity="center"
+                android:padding="20sp"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/calibri"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

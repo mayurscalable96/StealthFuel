@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EditAccount"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/fullname"
+                android:textCursorDrawable="@drawable/cursor"
+                android:inputType="text"
+                android:background="@drawable/roundededittext"
+                android:paddingLeft="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/calibri"
+                />
+            <EditText
+                android:id="@+id/edit_mob"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/mob"
+                android:textCursorDrawable="@drawable/cursor"
+                android:inputType="number"
+                android:background="@drawable/roundededittext"
+                android:paddingLeft="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/calibri"
+                />
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/email"
+                android:textCursorDrawable="@drawable/cursor"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/roundededittext"
+                android:paddingLeft="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/calibri"
+
+
+                />
+            <Button
+                android:id="@+id/edit_submit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_design"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/calibrib"
+                />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

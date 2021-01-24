@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OtpVerification"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+
+    <include layout="@layout/app_bar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/enter_otp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/otp"
+                android:textCursorDrawable="@drawable/cursor"
+                android:inputType="number"
+                android:background="@drawable/roundededittext"
+                android:paddingLeft="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/calibri"
+                />
+
+            <Button
+                android:id="@+id/otpVerify"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_design"
+                android:text="@string/otpVerify"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/calibrib"
+                />
+
+            <TextView
+                android:id="@+id/resend_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resend OTP"
+                android:gravity="center"
+                android:padding="20sp"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/calibri"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

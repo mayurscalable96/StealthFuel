@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+
+
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- Customize color of navigation drawer icon and back arrow -->
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <style name="error_text_input" parent="@android:style/TextAppearance">
+        <!--  <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">12sp</item>-->
+    </style>
+
+    <style name="text_input_hint" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="EditTextTheme1" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#999898</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">#ffffff</item>
+    </style>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlActivated">#999898</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:background">#f9f3f3</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="edittext_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+        <item name="android:background">@drawable/roundededittext</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+    <item name="android:textSize">18sp</item>
+    <item name="android:fontFamily">@font/calibrib</item>
+</style>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/grey_light</item>
+        <item name="colorControlActivated">@color/red</item>
+    </style>
+
+
+</resources>

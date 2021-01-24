@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "446456714048",
+    "firebase_url": "https://stealthfuel-de5cf.firebaseio.com",
+    "project_id": "stealthfuel-de5cf",
+    "storage_bucket": "stealthfuel-de5cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446456714048:android:6a628dcd595f003d",
+        "android_client_info": {
+          "package_name": "com.stealthfuel.app.stealthfuelon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446456714048-f9ife40pn9btrcoon1rvus0a7kdqc562.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.stealthfuel.app.stealthfuelon",
+            "certificate_hash": "7fd07dea56229918d89b4fca91165d4fd758cbaf"
+          }
+        },
+        {
+          "client_id": "446456714048-cu9067egj66bo87euku1ssv8ru4dtpog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO5rB-vcZYKqZGxjoBRGwuuPe98KrKtfA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446456714048-cu9067egj66bo87euku1ssv8ru4dtpog.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+

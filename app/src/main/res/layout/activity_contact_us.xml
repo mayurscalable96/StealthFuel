@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ContactUs"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+
+   <!-- <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginTop="?android:attr/actionBarSize"
+           >
+
+            <EditText
+                android:id="@+id/contact_description"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:hint="Write a  message"
+                android:textCursorDrawable="@drawable/cursor"
+                android:inputType="textMultiLine"
+                android:background="@drawable/roundededittext"
+                android:paddingLeft="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/calibri"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:gravity="top"
+                android:paddingTop="20dp"
+                />
+
+            <Button
+                android:id="@+id/submit_contact"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_design"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/calibrib"
+                />
+        </LinearLayout>
+ <!--   </android.support.v4.widget.NestedScrollView>-->
+
+</LinearLayout>
+

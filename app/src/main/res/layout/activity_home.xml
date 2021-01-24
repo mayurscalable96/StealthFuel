@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="activity.Home"
+            />
+        <LinearLayout
+            android:id="@+id/locationMarker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+           <!-- <TextView
+                android:id="@+id/locationMarkertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minWidth="250dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text=" Set your Location "
+                android:textColor="@android:color/white" />-->
+
+            <ImageView
+                android:id="@+id/imageMarker"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/markera" />
+        </LinearLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/home_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:layout_marginTop="?android:attr/actionBarSize"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                app:cardCornerRadius="5dp"
+                android:layout_marginTop="4dp"
+                >
+            <fragment
+                android:layout_weight="0.7"
+                android:id="@+id/place_autocomplete_fragment"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
+            </androidx.cardview.widget.CardView>
+            <Spinner
+                android:layout_weight="0.3"
+                android:id="@+id/spinner_maptype"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:background="@drawable/spinner_design"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundededittext"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/vehicle"
+                    android:layout_gravity="center"/>
+
+
+                <TextView
+                    android:id="@+id/gas_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibrib"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/gas_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibri"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey_light"
+                android:gravity="center"
+             />
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/vehicle"
+                    android:layout_gravity="center"/>
+
+
+                <Spinner
+                    android:id="@+id/spinner_vehicles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicles"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibri"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_design"
+            android:text="@string/requestStealthfuel"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/calibrib"
+            />
+    </LinearLayout>
+</RelativeLayout>

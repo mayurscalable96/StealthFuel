@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainlayout_popup"
+    android:background="@drawable/layout_design"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+
+        <ImageView
+            android:id="@+id/thumb"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/thumbs"
+
+            />
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/red"
+            android:layout_toRightOf="@+id/thumb"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:textStyle="bold"
+            android:text="@string/welcome"
+            android:fontFamily="@font/calibrib"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:textColor="@color/grey"
+            android:layout_toRightOf="@+id/thumb"
+            android:layout_below="@+id/welcome"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:text="Time to add your vehicle"
+            android:fontFamily="@font/calibri"
+            />
+    </RelativeLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:paddingLeft="15dp"
+       android:paddingRight="15dp">
+
+       <Button
+           android:layout_weight="0.5"
+           android:id="@+id/ok"
+           android:layout_width="0dp"
+           android:layout_height="50dp"
+           android:background="@drawable/button_design"
+           android:text="@string/ok"
+           android:textColor="@color/white"
+           android:textStyle="normal"
+           android:layout_marginTop="10dp"
+           android:textAllCaps="false"
+           android:fontFamily="@font/calibrib"
+           />
+       <Button
+           android:layout_weight="0.5"
+           android:id="@+id/skip"
+           android:layout_width="0dp"
+           android:layout_height="50dp"
+           android:background="@drawable/button_design"
+           android:text="@string/skip"
+           android:textColor="@color/white"
+           android:textStyle="normal"
+           android:layout_marginTop="10dp"
+           android:textAllCaps="false"
+           android:fontFamily="@font/calibrib"
+           />
+   </LinearLayout>
+
+</LinearLayout>

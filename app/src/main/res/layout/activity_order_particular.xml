@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OrderParticular"
+    android:orientation="vertical"
+    android:id="@+id/orderparticular_mainlayout"
+    >
+
+
+    <include layout="@layout/app_bar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:focusableInTouchMode="true"
+            android:focusable="true">
+
+
+
+        <LinearLayout
+            android:id="@+id/order_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundededittext"
+            >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Order id"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibrib"
+                />
+
+            <TextView
+                android:layout_weight="0.05"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=" : "
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibrib"
+                />
+
+            <TextView
+                android:layout_weight="0.4"
+                android:id="@+id/order_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibrib"
+                />
+            <TextView
+                android:layout_weight="0.4"
+                android:id="@+id/order_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibri"
+                android:gravity="right"
+                android:background="@drawable/red_strips"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibrib"
+                />
+
+            <TextView
+                android:layout_weight="0.05"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=" : "
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibrib"
+                />
+
+            <TextView
+                android:layout_weight="0.8"
+                android:id="@+id/order_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibri"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibrib"
+                />
+
+            <TextView
+                android:layout_weight="0.05"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=" : "
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibrib"
+                />
+            <TextView
+                android:layout_weight="0.8"
+                android:id="@+id/order_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibri"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Time Slot"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibrib"
+                />
+            <TextView
+                android:layout_weight="0.05"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=" : "
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibrib"
+                />
+
+            <TextView
+                android:layout_weight="0.8"
+                android:id="@+id/order_timeslot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibri"
+                />
+        </LinearLayout>
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/orderdeliveredlayout">
+            <TextView
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Delivered Date"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibrib"
+                />
+
+            <TextView
+                android:layout_weight="0.05"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=" : "
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibrib"
+                />
+
+            <TextView
+                android:layout_weight="0.8"
+                android:id="@+id/order_delivereddate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Delivery not complete"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibri"
+                />
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Vehicle"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibrib"
+                />
+
+            <TextView
+                android:layout_weight="0.05"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=" : "
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibrib"
+                />
+
+            <TextView
+                android:layout_weight="0.8"
+                android:id="@+id/order_vehicle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibri"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Gas type"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibrib"
+                />
+
+            <TextView
+                android:layout_weight="0.05"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=" : "
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibrib"
+                />
+
+            <TextView
+                android:layout_weight="0.8"
+                android:id="@+id/gastype"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibri"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="0.2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Gas Price"
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibrib"
+                />
+
+            <TextView
+                android:layout_weight="0.05"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=" : "
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibrib"
+                />
+
+            <TextView
+                android:layout_weight="0.8"
+                android:id="@+id/gasprice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/grey"
+                android:textSize="15sp"
+                android:fontFamily="@font/calibri"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/delivereddate_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundededittext"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery Date"
+                        android:textColor="@color/red"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/calibrib"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/order_delivereddate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Delivery not complete"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibri"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/deliveryboy_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundededittext"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Delivery Person"
+                        android:textColor="@color/red"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/calibrib"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_weight="0.2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+                        <TextView
+                            android:layout_weight="0.05"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" : "
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+                        <TextView
+                            android:layout_weight="0.8"
+                            android:id="@+id/delivery_boyname"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibri"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/customer_moblayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_weight="0.2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Mobile"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+                        <TextView
+                            android:layout_weight="0.05"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" : "
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+
+                        <TextView
+                            android:layout_weight="0.71"
+                            android:id="@+id/delivery_boymob"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibri"
+                            />
+                        <ImageView
+                            android:layout_weight="0.09"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/phone"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/charges_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundededittext"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Charges"
+                        android:textColor="@color/red"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/calibrib"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Extra Amount"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+                        <TextView
+                            android:layout_weight="0.05"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" : "
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+
+                        <TextView
+                            android:layout_weight="0.6"
+                            android:id="@+id/extra_ammount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibri"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Delivery Charge"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+                        <TextView
+                            android:layout_weight="0.05"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" : "
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+
+                        <TextView
+                            android:layout_weight="0.6"
+                            android:id="@+id/delivery_charge"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibri"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/gasfilled_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundededittext"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gas Filled"
+                        android:textColor="@color/red"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/calibrib"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Quantity"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+                        <TextView
+                            android:layout_weight="0.05"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" : "
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+
+                        <TextView
+                            android:layout_weight="0.6"
+                            android:id="@+id/gas_quantity"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibri"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Total Gas Price"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+                        <TextView
+                            android:layout_weight="0.05"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" : "
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+
+                        <TextView
+                            android:layout_weight="0.6"
+                            android:id="@+id/total_gasprice"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibri"
+                            />
+                    </LinearLayout>
+
+                   <!-- <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Extra Amount"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+                        <TextView
+                            android:layout_weight="0.05"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" : "
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+
+                        <TextView
+                            android:layout_weight="0.6"
+                            android:id="@+id/e_ammount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibri"
+                            />
+                    </LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Delivery Charge"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+                        <TextView
+                            android:layout_weight="0.05"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" : "
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                                          />
+
+
+                        <TextView
+                            android:layout_weight="0.6"
+                            android:id="@+id/d_charge"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibri"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_weight="0.4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Total Amount"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+                        <TextView
+                            android:layout_weight="0.05"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" : "
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+
+                        <TextView
+                            android:layout_weight="0.6"
+                            android:id="@+id/gas_totalamount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibri"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/comment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundededittext"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Comment"
+                        android:textColor="@color/red"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/calibrib"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/comment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibri"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ratinginsert_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rating"
+                        android:textColor="@color/red"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/calibrib"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RatingBar
+                            android:id="@+id/ratingBar_insert"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="5"
+                            android:stepSize="1.0"
+                            android:theme="@style/RatingBar"/>
+
+                        <EditText
+                            android:id="@+id/ratingdescription_insert"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:hint="Description"
+                            android:textCursorDrawable="@drawable/cursor"
+                            android:inputType="textMultiLine"
+                            android:background="@drawable/roundededittext"
+                            android:paddingLeft="15dp"
+                            android:textSize="14sp"
+                            android:textColor="@color/grey"
+                            android:fontFamily="@font/calibri"
+                            android:overScrollMode="always"
+                            android:scrollbarStyle="insideInset"
+                            android:scrollbars="vertical"
+                            />
+
+                        <Button
+                            android:id="@+id/submit_rating"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_design"
+                            android:text="@string/submit"
+                            android:textColor="@color/white"
+                            android:textStyle="normal"
+                            android:layout_marginTop="20dp"
+                            android:textAllCaps="false"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ratingshow_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundededittext"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rating"
+                        android:textColor="@color/red"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/calibrib"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <RatingBar
+                            android:id="@+id/ratingBar_show"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="5"
+                            android:stepSize="1.0"
+                            android:theme="@style/RatingBar"
+                            android:isIndicator="true"/>
+
+
+                        <TextView
+                            android:id="@+id/ratingdescription_show"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibri"
+                            />
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/cancel_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_design"
+                android:text="Cancel Order"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/calibrib"
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Order"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true">
+
+    <include layout="@layout/app_bar"/>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <LinearLayout
+                    android:id="@+id/layout_timeslot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <devs.mulham.horizontalcalendar.HorizontalCalendarView
+                        android:id="@+id/calendarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        app:textColorSelected="#FFFF"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview_timeslot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical"
+                        android:nestedScrollingEnabled="false"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/delivery_charge1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/calibrib"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/use_timeslot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_design"
+                    android:text="Use Time Slot"
+                    android:textColor="@color/white"
+                    android:textStyle="normal"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/calibrib"
+                    />
+                <Button
+                    android:id="@+id/use_fixtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_design"
+                    android:text="On Demand Request"
+                    android:textColor="@color/white"
+                    android:textStyle="normal"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/calibrib"
+                    android:visibility="gone"
+                    />
+            <LinearLayout
+                android:id="@+id/layout_fixtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/date_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundededittext"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="Select Date"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/calibri"/>
+                <TextView
+                    android:id="@+id/time_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundededittext"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:text="Select On Demand Time"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/calibri"/>
+
+                <TextView
+                    android:id="@+id/fixeamount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/calibrib"/>
+                <TextView
+                    android:id="@+id/delivery_charge2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/calibrib"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Note : Subject to availability."
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/calibrib"/>
+
+                <Button
+                    android:id="@+id/submit_fixtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_design"
+                    android:text="Submit On Demand Request"
+                    android:textColor="@color/white"
+                    android:textStyle="normal"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/calibrib"
+                    />
+            </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+</LinearLayout>

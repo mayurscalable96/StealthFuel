@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundededittext"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Order id"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibrib"
+                    />
+
+                <TextView
+                    android:layout_weight="0.05"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibrib"
+                    />
+
+                <TextView
+                    android:layout_weight="0.4"
+                    android:id="@+id/order_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibrib"
+                    />
+                <TextView
+                    android:layout_weight="0.4"
+                    android:id="@+id/order_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibri"
+                    android:gravity="right"
+                    android:background="@drawable/red_strips"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibrib"
+                    />
+                <TextView
+                    android:layout_weight="0.05"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibrib"
+                    />
+
+                <TextView
+                    android:layout_weight="0.8"
+                    android:id="@+id/order_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibri"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibrib"
+                    />
+                <TextView
+                    android:layout_weight="0.05"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibrib"
+                    />
+
+                <TextView
+                    android:layout_weight="0.8"
+                    android:id="@+id/order_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibri"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Time Slot"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibrib"
+                    />
+                <TextView
+                    android:layout_weight="0.05"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibrib"
+                    />
+
+                <TextView
+                    android:layout_weight="0.8"
+                    android:id="@+id/order_timeslot"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibri"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibrib"
+                    />
+
+                <TextView
+                    android:layout_weight="0.05"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibrib"
+                    />
+
+                <TextView
+                    android:layout_weight="0.8"
+                    android:id="@+id/order_vehical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibri"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gas type"
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibrib"
+                    />
+
+                <TextView
+                    android:layout_weight="0.05"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibrib"
+                    />
+
+                <TextView
+                    android:layout_weight="0.8"
+                    android:id="@+id/order_gastype"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/grey"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/calibri"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

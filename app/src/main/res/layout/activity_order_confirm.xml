@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OrderConfirm"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true">
+
+    <include layout="@layout/app_bar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <LinearLayout
+                android:id="@+id/order_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundededittext"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_weight="0.2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Address"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+                        <TextView
+                            android:layout_weight="0.05"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" : "
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+                        <TextView
+                            android:id="@+id/order_address"
+                            android:layout_weight="0.8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibri"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_weight="0.2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Vehicle"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+                        <TextView
+                            android:layout_weight="0.05"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" : "
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+                        <TextView
+                            android:id="@+id/order_vehicle"
+                            android:layout_weight="0.8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibri"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_weight="0.2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Gas type"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+                        <TextView
+                            android:layout_weight="0.05"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" : "
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+                        <TextView
+                            android:id="@+id/gastype"
+                            android:layout_weight="0.8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibri"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_weight="0.2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Gas price"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+                        <TextView
+                            android:layout_weight="0.05"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" : "
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+                        <TextView
+                            android:id="@+id/gasprice"
+                            android:layout_weight="0.8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibri"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_weight="0.2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Date"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+                        <TextView
+                            android:layout_weight="0.05"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" : "
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+                        <TextView
+                            android:id="@+id/selected_date"
+                            android:layout_weight="0.8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibri"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_weight="0.2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Time slot"
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+                        <TextView
+                            android:layout_weight="0.05"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" : "
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibrib"
+                            />
+
+                        <TextView
+                            android:id="@+id/selected_timeslot"
+                            android:layout_weight="0.8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/grey"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/calibri"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:hint="Comment"
+                android:textCursorDrawable="@drawable/cursor"
+                android:inputType="textMultiLine"
+                android:background="@drawable/roundededittext"
+                android:paddingLeft="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/calibri"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                />
+
+            <TextView
+                android:id="@+id/delivery_charge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/calibrib"/>
+
+            <Button
+                android:id="@+id/submit_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_design"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/calibrib"
+                />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

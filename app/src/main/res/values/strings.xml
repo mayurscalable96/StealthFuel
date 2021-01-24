@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Stealth Fuel</string>
+
+    <string name="fullname">Full Name</string>
+    <string name="mob">Mobile Number</string>
+    <string name="email">Email Id</string>
+    <string name="pwd">Password</string>
+    <string name="repwd">Re-Enter Password</string>
+    <string name="refcode">Refral Code(optional)</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="ok">Ok</string>
+    <string name="skip">Skip</string>
+
+    <string name="vehical_year">Vehicle Year</string>
+    <string name="vehical_make">Vehicle Make</string>
+    <string name="vehical_model">Vehicle Model</string>
+    <string name="vehical_color">Vehicle Color</string>
+    <string name="vehical_plate">Vehicle Plate Number</string>
+    <string name="vehical_state">Vehicle State</string>
+
+    <string name="invite_text">Give a friend $10.00 on Steal Fuel,and get $4.00 when they use our service.</string>
+    <string name="title_activity_home">Map</string>
+
+    <string name="vehicles">Vehicles</string>
+    <string name="next">Next</string>
+    <string name="requestStealthfuel">Request Stealth Fuel</string>
+    <string name="businessHour">Business hours are closed.Please try request during business hours.</string>
+    <string name="apiKey">AIzaSyBLTcek1fw-kHU-WnCZmw1KLYpVxloABMc</string>
+    <string name="otpVerify">Verify</string>
+    <string name="otp">OTP</string>
+
+</resources>

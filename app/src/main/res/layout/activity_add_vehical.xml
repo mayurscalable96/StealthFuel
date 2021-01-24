@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddVehical"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+
+            <EditText
+                android:id="@+id/vehical_year"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/vehical_year"
+                android:textCursorDrawable="@drawable/cursor"
+                android:inputType="number"
+                android:background="@drawable/roundededittext"
+                android:paddingLeft="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/calibri"/>
+
+
+                <EditText
+                    android:id="@+id/vehical_make"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/vehical_make"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:inputType="text"
+                    android:background="@drawable/roundededittext"
+                    android:paddingLeft="15dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/calibri"/>
+
+
+
+            <EditText
+                android:id="@+id/vehical_model"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/vehical_model"
+                android:textCursorDrawable="@drawable/cursor"
+                android:inputType="text"
+                android:background="@drawable/roundededittext"
+                android:paddingLeft="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/calibri"/>
+
+
+                <EditText
+                    android:id="@+id/vehical_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/vehical_color"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:inputType="text"
+                    android:background="@drawable/roundededittext"
+                    android:paddingLeft="15dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/calibri"/>
+
+
+
+                <EditText
+                    android:id="@+id/vehical_plate"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/vehical_plate"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:inputType="text"
+                    android:background="@drawable/roundededittext"
+                    android:paddingLeft="15dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey"
+                    android:fontFamily="@font/calibri"/>
+
+            <EditText
+                android:id="@+id/vehical_state"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/vehical_state"
+                android:textCursorDrawable="@drawable/cursor"
+                android:inputType="text"
+                android:background="@drawable/roundededittext"
+                android:paddingLeft="15dp"
+                android:textSize="14sp"
+                android:textColor="@color/grey"
+                android:fontFamily="@font/calibri"/>
+
+            <Spinner
+                android:id="@+id/spinner_gas_type"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/spinner_design"
+                />
+
+            <Button
+                android:id="@+id/add_vehical_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_design"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/calibrib"
+                />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
